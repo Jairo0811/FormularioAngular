@@ -1,0 +1,25 @@
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card-body">
+                    <div class="text-center">
+                        <img *ngIf="sexomostrar; else Femenina" src="assets/img/masculino.jpg" class="center" alt="" />
+                        <ng-template #Femenina>
+                            <img src="assets/img/femenino.jpg" class="center" alt="" />
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <li class="list-group-item "><strong>Nombre Completo:</strong> {{ nombre }}</li>
+        <li class="list-group-item "><strong>Cedula:</strong> {{ cedula }}</li>
+        <li class="list-group-item "><strong>Telefono:</strong> {{ telefono }}</li>
+        <li class="list-group-item "><strong>Sexo:</strong> {{ sexualidad }}</li>
+        <li class="list-group-item "><strong>Estado Civil:</strong> {{ estadoCivil }}</li>
+    </div>
+
+
+
+
+</section>

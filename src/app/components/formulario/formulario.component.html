@@ -1,0 +1,36 @@
+<h3>Formulario</h3>
+<div class="container">
+    <div class="form-group ">
+        <label for="">Nombre Completo</label>
+        <input type="text " class="form-control " [(ngModel)]="nombre ">
+    </div>
+    <div class="form-group ">
+        <label for="">Sexo</label>
+        <select class="form-control " [(ngModel)]="sexualidad2 ">
+      <option value=" " selected disabled hidden>Sexo</option>
+      <option *ngFor="let sexualidad of sexualidad " [ngValue]="sexualidad ">{{sexualidad}}</option>
+      </select>
+    </div>
+
+    <div class="form-group ">
+        <label for="">Estado Civil</label>
+        <select class="form-control " [(ngModel)]="estadoCivil2 ">
+         
+    <option *ngFor="let estadoCivil of estadoCivil " [ngValue]="estadoCivil ">{{estadoCivil}}</option>
+    </select>
+    </div>
+
+    <div class="form-group ">
+        <label for="">Cedula</label>
+        <input type="text " class="form-control " [(ngModel)]="cedula ">
+    </div>
+
+    <div class="form-group ">
+        <label for="">Telefono</label>
+        <input type="text " class="form-control " [(ngModel)]="telefono ">
+    </div>
+
+    <button type="button" class="btn btn-primary" [routerLink]="[ '/resultado',nombre,sexualidad2,estadoCivil2,cedula,telefono] ">Enviar Datos</button>
+
+
+</div>

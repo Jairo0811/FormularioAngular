@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "PrimerParcial"
+    }
+  },
+  "defaultProject": "PrimerParcial",
+  "cli": {
+    "analytics": false
+  }
 }

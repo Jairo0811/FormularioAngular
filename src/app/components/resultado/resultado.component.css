@@ -1,0 +1,15 @@
+   .row,
+   li,
+   section {
+       text-align: center;
+   }
+
+   .row {
+       align-items: center;
+   }
+
+   .center {
+       width: 304px;
+       height: 236px;
+       justify-content: center;
+   }
